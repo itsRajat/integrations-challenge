@@ -19,6 +19,7 @@ Day 1:
 
 - I started studying Paypal API's, especially the server API calls (https://developer.paypal.com/docs/business/checkout/server-side-api-calls/#server-side-api-calls) & Order API. After pulling an all-nighter and trying out different code samples, curl commands, I went on to create a simple app on my own from scratch to get a better idea of how everything is fitting together & to understand what the actual process is, how smart buttons work, how to use the response data to make the next request & so on.
 
+
 Day 2:
 
 - I kinda had an idea now of how the PayPal APIs worked but I was still a little scared about getting into the template/framework code.
@@ -44,11 +45,12 @@ Day 2:
   TransactionStatus is just a synonym for a couple of literal strings, and T & { transactionStatus: U; } is a type conjunction, meaning that the result is a type that is just like the type T, plus a field transactionStatus which is of type U (which with U extends TransactionStatus is constrained to be one or more of the strings we know as TransactionStatus).
 
   Finally understood that ParsedAuthorizationResponse is actually just this in a nutshell -
-
+```js
   type ParsedAuthorizationResponse =
   | { processorTransactionId: string; transactionStatus: 'AUTHORIZED' | 'CANCELLED' | 'SETTLING' | 'SETTLED' }
   | { declineReason: string; transactionStatus: 'DECLINED' }
   | { errorMessage: string; transactionStatus: 'FAILED' }
+  ```
 
 I was also trying to return new Promise but remembered that async functions return promise by default so I didn't specifically have to return a 'new' Promise, just ParsedAuthorizationResponse.
 
@@ -69,10 +71,9 @@ I was also trying to return new Promise but remembered that async functions retu
 - I tested the requests & responses in the network tab in developer tools during development of everything as well.
 - Used bash & curl a lot to perform actions on orders first, then proceeded to implement that specific action in the file in JS.
 
-This was quite challenging for me to be honest, as I had more experience in Frontend and no experience with Typescript. But I definitely
-feel like a better developer after this challenge & really enjoyed it, despite not having slept properly the last 2 days haha.
+This was quite challenging for me to be honest, as I had more experience in Frontend and no experience with Typescript and I ran into a lot of problems that I haven't mentioned here. But I definitely feel like a better developer after this challenge & really enjoyed it, despite the lack of sleep haha.
 
-Sending you a request with my data that includes the Findings & the Code asynchronously, will be awaiting a response.
+I've attempted this challenge as well as I could, I hope you find the code satisfactory.
 
 Thank you for reading,
 Rajat.
