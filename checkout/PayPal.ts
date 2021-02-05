@@ -30,7 +30,7 @@ const PayPalConnection: ProcessorConnection<
   website: 'https://paypal.com',
 
   /**
-   * Sandbox Configuration
+   * Sandbox Configuration. Hardcoding them for the purpose of this challenge, but otherwise would probably use an ENV file.
    */
   configuration: {
     accountId: 'bussinessacc2@gmail.com',
