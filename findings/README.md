@@ -1,4 +1,4 @@
-Hi! I've described my learnings, findings & approach to solving this challenge below. Sorry if it's a little verbose, I just wanted to
+Hi! I've described my learnings, findings & approach to solving this challenge below. Sorry if it's a little verbose, I wanted to
 document the experience properly.
 
 Day 1:
@@ -17,13 +17,12 @@ Day 1:
   This kinda overwhelmed me, as I'd never worked with TypeScript before & the code seemed fairly challenging for me to understand,
   as I was accustomed to regular JavaScript & Front-end side in general. So I decided to come back to this later.
 
-- I started studying Paypal API's, especially the server API calls (https://developer.paypal.com/docs/business/checkout/server-side-api-calls/#server-side-api-calls) & Orders API.
-  After pulling an all-nighter and trying out different code samples, curl commands, I went on to create a simple app on my own from scratch to get a better idea of how everything is fitting together &
-  to understand what the actual process is, how smart buttons work, how to use the response data to make the next request & so on.
+- I started studying Paypal API's, especially the server API calls (https://developer.paypal.com/docs/business/checkout/server-side-api-calls/#server-side-api-calls) & Order API. After pulling an all-nighter and trying out different code samples, curl commands, I went on to create a simple app on my own from scratch to get a better idea of how everything is fitting together & to understand what the actual process is, how smart buttons work, how to use the response data to make the next request & so on.
 
 Day 2:
 
 - I kinda had an idea now of how the PayPal APIs worked but I was still a little scared about getting into the template/framework code.
+
 - I already sort of knew how Generics, Interfaces, etc worked in general as I've worked with Java previously but I wanted to get a better understanding
   of how they work in Typescript, so I went ahead & learnt a little more about Typescript to get comfortable enough to read/understand it without getting overwhelmed.
   The official TS docs helped.
